@@ -10,7 +10,6 @@ describe("Faucet", function () {
     const faucet = await Faucet.deploy();
 
     const [owner] = await ethers.getSigners();
-
     let withdrawAmount = ethers.utils.parseUnits("1", "ether");
 
     console.log("Signer 1 address: ", owner.address);
